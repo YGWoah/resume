@@ -1,0 +1,159 @@
+\documentclass[10pt,a4paper]{article}  % Increased font size to 11pt
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+
+% Page setup with small margins
+\geometry{
+    top=0.5in,
+    bottom=0.5in,
+    left=0.5in,
+    right=0.5in
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Custom colors
+\definecolor{darkblue}{RGB}{0,0,139}
+\definecolor{gray}{RGB}{128,128,128}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    urlcolor=darkblue,
+    pdftitle={Ali Ben-hammad Resume},
+    pdfauthor={Ali Ben-hammad}
+}
+
+% Custom section formatting with underline
+\titleformat{\section}
+{\large\bfseries\MakeUppercase}
+{}
+{0em}
+{}
+[\vspace{-0.5\baselineskip}\rule{\textwidth}{0.5pt}]   
+
+\titlespacing{\section}{0pt}{6pt}{0pt}  % Increased spacing before and after sections
+
+% Custom commands
+\newcommand{\resumeSubheading}[4]{
+    \vspace{6pt}
+    \noindent\textbf{\large #1} \hfill \textbf{#2} \\  % Name and Date/Location in bold, no indent
+    {\small #3} \hfill {\small #4} \\ % Description and Location in italics
+    \vspace{-8pt}
+}
+
+% Custom commands
+\newcommand{\projectSection}[2]{
+    \vspace{6pt}
+    \noindent\textbf{\large #1} \hfill \textbf{#2} \\  % Name and Date/Location in bold, no indent
+    \vspace{-8pt}
+}
+
+% Corrected: Only use \item, not \item\large
+\newcommand{\resumeItem}[1]{
+    \item #1
+}
+
+% Compact list spacing
+\setlist[itemize]{leftmargin=12pt,nosep,itemsep=1pt,parsep=0pt,topsep=0pt}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE\textbf{\MakeUppercase{Ali Ben-hammad}}}\\
+    \vspace{2pt}
+    {\large Software Engineer | Seeking Entry-Level Full-Stack Role}\\
+    \vspace{6pt}
+    {\footnotesize \faPhone\ +212 6 12 44 39 18 \quad \faEnvelope\ \href{mailto:alibenhammad7@gmail.com}{alibenhammad7@gmail.com} \quad \faLinkedin\ \href{https://www.linkedin.com/in/ali-ben-hammad/}{Ali Ben-hammad} \quad \faGithub\ \href{https://github.com/ali-ben-hammad}{ali-ben-hammad}}
+\end{center}
+
+% Education Section
+\section{Education}
+
+\resumeSubheading
+{Ecole Normale Supérieure de l'Enseignement Technique - ENSET}{2022 -- 2025}
+{Engineering Degree in Software and Distributed Computer Systems}{Mohammedia}
+
+\resumeSubheading
+{Ecole supérieure de technologie - ESTM}{2020 -- 2022}
+{University Technology Diploma in Software Engineering}{Meknès}
+
+% Skills Section
+\section{Skills}
+\noindent
+\textbf{Programming Languages:} C, Java, Golang, Typescript\\
+\textbf{DevOps:} Git, Docker, Linux, AWS, Azure DevOps\\
+\textbf{Databases:} PostgreSQL, Oracle DB, MongoDB, MySQL\\
+\textbf{Frameworks \& Technologies:} Spring Boot, Angular, Nuxt JS, Next JS, Express, Tailwind, \\
+\textbf{Soft Skills:} Problem-solving, Teamwork, Adaptability, Time management, Ownership, Critical thinking\\
+\textbf{Collaboration Tools:} Trello, Figma, Notion, Slack, Microsoft Teams\\
+
+
+% Experience Section
+\section{Experience}
+
+\resumeSubheading
+{Theodo}{Feb 2025 -- Aug 2025}
+{Software Engineer Intern}{Casablanca}
+\begin{itemize}
+    \resumeItem{Contributed to the design of a data collection and visualization platform}
+    \resumeItem{Delivered a fully functional web-based analytics dashboard with \textbf{Next.js}}
+    \resumeItem{Utilized \textbf{Chart.js} for data visualization}
+    \resumeItem{Integrated \textbf{Supabase} services for authentication and data storage}
+    \resumeItem{Implemented serverless \textbf{Edge Functions} using \textbf{TypeScript} for analytics calculation}
+    \resumeItem{Conducted \textbf{Sprint review} sessions to demonstrate progress and align on next steps}
+
+\end{itemize}
+
+\resumeSubheading   
+{OpenTecc}{Jun 2024 -- Aug 2024}
+{Software Engineer Intern}{Agadir}
+\begin{itemize}
+    \resumeItem{Collaborated in a team to develop a \textbf{CI/CD} platform}
+    \resumeItem{Developed the Runner component using \textbf{Golang}}
+    \resumeItem{Integrated various AWS services including \textbf{ECS, S3, ECR, SQS, and SNS}}
+    \resumeItem{Implemented unit and integration tests to ensure code quality and reliability}
+    \resumeItem{Utilized \textbf{Azure DevOps} for project management in an \textbf{Agile} environment}
+    \resumeItem{Participated in \textbf{Weekly demos}, presenting progress to the team}
+\end{itemize}
+% Projects Section
+\section{Projects}
+
+\projectSection
+{3D Multiplayer shooting Game}{Feb 2022 -- Jun 2022}
+\begin{itemize}
+    \resumeItem{Programmed player movement logic and shooting mechanics in \textbf{C\#} using Unity 3D}
+    \resumeItem{Implemented shooting mechanics with raycasting for efficient hit detection}
+    \resumeItem{Integrated Cinemachine camera for a dynamic third-person view}    
+    \resumeItem{Utilized Unity 3D engine for physics simulations and texture }
+\end{itemize}
+
+\projectSection
+{E-commerce Platform - Jumia Clone}{Jun 2023 -- Aug 2023}
+\begin{itemize}
+    \resumeItem{Developed an e-commerce platform, focusing on a user-friendly and intuitive design}
+    \resumeItem{Utilized \textbf{Next.js} and \textbf{Tailwind CSS} for responsive UI}
+    \resumeItem{Customized products filtering and sorting features}
+    \resumeItem{Integrated \textbf{Firebase} for user authentication and management, with \textbf{OAuth} providers support}
+    \resumeItem{Implemented user cart management and persistence using \textbf{Firestore}}
+\end{itemize}
+
+
+\section{Languages \& Interests}
+\noindent
+\textbf{Languages:} French (fluent), English (professional), Arabic (native)\\
+\textbf{Personal Interests:} Football, Chess, Video Games, Game development\\
+
+
+\end{document}
