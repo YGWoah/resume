@@ -1,0 +1,144 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+
+% PDF metadata
+\hypersetup{
+    pdftitle={Hamza EL MASSOUDI DevOps Resume},
+    pdfauthor={Hamza EL MASSOUDI},
+    colorlinks=true,
+    urlcolor=blue
+}
+
+% --------------------------------------------------
+% Page layout
+% --------------------------------------------------
+\geometry{
+    top    = 0.3in,
+    bottom = 0.3in,
+    left   = 0.5in,
+    right  = 0.5in
+}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\pagenumbering{gobble}
+
+% --------------------------------------------------
+% Section formatting
+% --------------------------------------------------
+\titleformat{\section}{\bfseries\large\raggedright}{}{0pt}{}
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% --------------------------------------------------
+% Document start
+% --------------------------------------------------
+\begin{document}
+
+% --------------------------------------------------
+% Header
+% --------------------------------------------------
+\begin{center}
+    {\LARGE \textbf{Hamza EL MASSOUDI}}\\
+    \smallskip
+    DevOps Engineer \textbar\ Casablanca, Morocco\\
+    \smallskip
+    \faPhone\; +212 697 56 68 01 \quad
+    \href{mailto:hamza.elmassoudi.dev@gmail.com}{hamza.elmassoudi.dev@gmail.com} \quad
+    \href{https://www.linkedin.com/in/hamza-el-massoudi-29a558235/}{\faLinkedin\ linkedin.com/in/hamza-el-massoudi-29a558235} \quad
+    \href{https://github.com/ygwoah/}{\faGithub\ github.com/ygwoah}
+\end{center}
+\vspace{-4pt}
+\hrule
+\vspace{8pt}
+
+% --------------------------------------------------
+% Summary
+% --------------------------------------------------
+\section*{Summary}
+DevOps Engineer with expertise in CI/CD pipelines, cloud infrastructure, and scalable systems. Optimized CI pipelines reducing test time and implemented robust plugin testing for OpenSearch on Oracle Cloud Infrastructure. Proficient in containerization, orchestration, and infrastructure as code using Docker, Kubernetes, and Terraform.
+
+% --------------------------------------------------
+% Education
+% --------------------------------------------------
+\section{EDUCATION}
+
+\begin{tabularx}{\linewidth}{@{}p{0.78\linewidth} r@{}}
+	\textbf{Engineering Degree, Software Engineering \& Distributed Systems} — Ecole Normale Supérieure de l’Enseignement Technique, Mohammedia & 2022--2025 \\
+	\textbf{B.Sc. Mathematics \& Computer Science} — Faculty of Science and Technology, Al Hoceima & 2021--2022 \\
+	\textbf{DEUST} (Scientific and Technical University Studies) — Faculty of Science and Technology, Al Hoceima & 2019--2021 \\
+\end{tabularx}
+
+% --------------------------------------------------
+% Experience
+% --------------------------------------------------
+\section{EXPERIENCE}
+
+	\textbf{Software Engineer Intern — Oracle, OCI Search with OpenSearch}
+\hfill Feb 2025--Aug 2025\\
+Casablanca, Morocco
+\begin{itemize}[leftmargin=*]
+    \item Optimized CI/CD pipelines reducing test-suite execution time.
+    \item Developed automated plugin-test suites for OpenSearch with Java and Bash scripts for regression and performance testing.
+    \item Enhanced monitoring and observability of testing processes to improve reliability and debugging.
+\end{itemize}
+
+	\textbf{Software Engineering Intern — FeverToken}
+\hfill Jun 2023--Aug 2023\\
+Remote
+\begin{itemize}[leftmargin=*]
+    \item Developed a mobile app as a crypto wallet.
+    \item Implemented features for securing the wallet, including encryption and authentication.
+    \item Added functionality for transferring money with blockchain integration.
+\end{itemize}
+
+% --------------------------------------------------
+% Projects
+% --------------------------------------------------
+\section{PROJECTS}
+
+	\textbf{Student Engagement \& Academic Management Platform (Freelance -- Contract)}
+\hfill Sep 2024--Dec 2024 \\
+Freelance
+\begin{itemize}[leftmargin=*]
+    \item Architected and delivered a scalable React Native app for 1,000+ concurrent students, enabling self-service, community engagement, and mentor matching.
+    \item Integrated an AI-powered chatbot to automate and resolve student FAQs instantly.
+    \item Engineered the platform using React Native, Node.js/Express, PostgreSQL, and OpenAI API.
+\end{itemize}
+
+	\textbf{Survey Creation Platform}
+\hfill 2024 \\
+Personal Project
+\begin{itemize}[leftmargin=*]
+    \item Conceived and engineered a full-stack web platform for creating, distributing, and analyzing surveys using microservices architecture, with RESTful APIs in \textbf{Spring Boot} and a responsive \textbf{React} frontend.
+    \item Leveraged \textbf{PostgreSQL} for data management and integrated user authentication with analytics.
+    \item Containerized the application using Docker and deployed microservices on Kubernetes for scalability, orchestration, and high availability.
+\end{itemize}
+
+% --------------------------------------------------
+% Skills
+% --------------------------------------------------
+\section{SKILLS}
+
+	\textbf{DevOps \& Cloud}: Docker, Kubernetes, Terraform, OCI, Git, Linux \\
+	\textbf{Programming Languages}: Java, Bash, Python \\
+	\textbf{Backend}: Spring Boot, Express.js, Node.js \\
+	\textbf{Databases}: MySQL, PostgreSQL, MongoDB \\
+	\textbf{Frontend}: React, React Native
+
+% --------------------------------------------------
+% Languages & Interests
+% --------------------------------------------------
+\section{LANGUAGES \& INTERESTS}
+
+	\textbf{Languages}: Arabic (Native), English (Fluent), French (Fluent) \\
+	\textbf{Interests}: Football, Reading, Competitive Programming
+
+\end{document}

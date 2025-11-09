@@ -18,33 +18,24 @@
     urlcolor=blue
 }
 
-% --------------------------------------------------
 % Page layout
-% --------------------------------------------------
 \geometry{
-    top    = 0.5in,
-    bottom = 0.5in,
-    left   = 0.5in,
-    right  = 0.5in
+    top=0.5in,bottom=0.5in,left=0.5in,right=0.5in
 }
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{2pt}
 \pagenumbering{gobble}
 
-% --------------------------------------------------
 % Section formatting
-% --------------------------------------------------
 \titleformat{\section}{\bfseries\large\raggedright}{}{0pt}{}
 \titlespacing*{\section}{0pt}{4pt}{4pt}
 
-% --------------------------------------------------
-% Document start
-% --------------------------------------------------
+% Compact lists
+\setlist[itemize]{leftmargin=*, itemsep=2pt, topsep=2pt}
+
 \begin{document}
 
-% --------------------------------------------------
 % Header
-% --------------------------------------------------
 \begin{center}
     {\LARGE \textbf{Hamza EL MASSOUDI}}\\
     \smallskip
@@ -59,32 +50,24 @@
 \hrule
 \vspace{8pt}
 
-% --------------------------------------------------
 % Summary
-% --------------------------------------------------
 \section*{Résumé}
 Ingénieur full‑stack spécialisé dans les systèmes de recherche distribués (Oracle Cloud Infrastructure). J’ai accéléré les pipelines CI de 35\% et renforcé la couverture de tests des plugins OpenSearch. À l’aise avec la conception d’applications web/mobile scalables et l’intégration de solutions IA, avec React, Spring Boot, PostgreSQL et Docker.
 
-% --------------------------------------------------
 % Education
-% --------------------------------------------------
 \section{FORMATION}
-
 \begin{tabularx}{\linewidth}{@{}p{0.78\linewidth} r@{}}
-	\textbf{Diplôme d’Ingénieur, Génie Logiciel \& Systèmes Distribués} — École Normale Supérieure de l’Enseignement Technique, Mohammedia & 2022--2025 \\
-	\textbf{Licence (B.Sc.) Mathématiques \& Informatique} — Faculté des Sciences et Techniques, Al Hoceïma & 2021--2022 \\
-	\textbf{DEUST} (Diplôme d’Études Universitaires Scientifiques et Techniques) — Faculté des Sciences et Techniques, Al Hoceïma & 2019--2021 \\
+    \textbf{Diplôme d’Ingénieur, Génie Logiciel \& Systèmes Distribués} — École Normale Supérieure de l’Enseignement Technique, Mohammedia & 2022--2025 \\
+    \textbf{Licence (B.Sc.) Mathématiques \& Informatique} — Faculté des Sciences et Techniques, Al Hoceïma & 2021--2022 \\
+    \textbf{DEUST} (Diplôme d’Études Universitaires Scientifiques et Techniques) — Faculté des Sciences et Techniques, Al Hoceïma & 2019--2021 \\
 \end{tabularx}
 
-% --------------------------------------------------
 % Experience
-% --------------------------------------------------
 \section{EXPÉRIENCE}
-
 \textbf{Stagiaire Ingénieur Logiciel — Oracle, OCI Search avec OpenSearch}
 \hfill Fév. 2025--Août 2025\\
 Casablanca, Maroc
-\begin{itemize}[leftmargin=*]
+\begin{itemize}
     \item Optimisation du pipeline CI, réduction du temps d’exécution de la suite de tests.
     \item Conception d’une suite de tests pour plugins OpenSearch en Java et Bash.
     \item Amélioration de l’observabilité et du reporting des tests.
@@ -93,53 +76,44 @@ Casablanca, Maroc
 \textbf{Stagiaire Ingénierie Logicielle — FeverToken}
 \hfill Juin 2023--Août 2023\\
 Télétravail
-\begin{itemize}[leftmargin=*]
+\begin{itemize}
     \item Développement d’une application mobile de portefeuille crypto.
     \item Implémentation de mécanismes de sécurisation (chiffrement et authentification).
     \item Intégration blockchain pour les transferts d’argent.
 \end{itemize}
 
-% --------------------------------------------------
 % Projects
-% --------------------------------------------------
 \section{PROJETS}
-
 \textbf{Plateforme d’Engagement Étudiant \& Gestion Académique (Freelance — Contrat)}
 \hfill Sep. 2024--Déc. 2024 \\
 Freelance
-\begin{itemize}[leftmargin=*]
-    \item Architecture et livraison d’une app React Native scalable pour 1\,000+ étudiants simultanés, avec self‑service, communauté et matching mentor.
-    \item Intégration d’un chatbot IA pour automatiser les FAQs étudiantes.
-    \item Stack : React Native, Node.js/Express, PostgreSQL, API OpenAI.
+\begin{itemize}
+    \item App React Native scalable pour 1\,000+ étudiants simultanés: self‑service, communauté, matching mentor.
+    \item Chatbot IA pour automatiser les FAQs étudiantes.
+    \item Stack: React Native, Node.js/Express, PostgreSQL, Firebase, API OpenAI.
 \end{itemize}
 
 \textbf{Plateforme de Création de Sondages}
 \hfill 2024 \\
 Projet personnel
-\begin{itemize}[leftmargin=*]
-    \item Conception et développement d’une plateforme web full‑stack pour créer, distribuer et analyser des sondages.
-    \item APIs REST et logique métier avec \textbf{Spring Boot}, réduisant le temps de création de 30\%.
-    \item Frontend réactif et intuitif en \textbf{React} avec visualisation des résultats en temps réel.
-    \item \textbf{PostgreSQL} pour une gestion de données sécurisée et scalable.
-    \item Authentification utilisateur et analytics dynamiques pour améliorer l’expérience.
+\begin{itemize}
+    \item Plateforme web full‑stack pour créer, distribuer et analyser des sondages.
+    \item APIs REST et logique métier avec \textbf{Spring Boot}, -30\% sur le temps de création.
+    \item Frontend \textbf{React} avec visualisation temps réel; \textbf{PostgreSQL} sécurisé et scalable.
+    \item Stack: Spring Boot, React, Keycloak, PostgreSQL.
+
 \end{itemize}
 
-% --------------------------------------------------
 % Skills
-% --------------------------------------------------
 \section{COMPÉTENCES}
-
 \textbf{Langages}: TypeScript, JavaScript, Java \\
 \textbf{Frontend}: React, React Native, Next.js, Tailwind CSS \\
 \textbf{Backend}: Spring Boot, Express.js, Node.js \\
 \textbf{Bases de données}: MySQL, PostgreSQL, MongoDB, Firestore \\
 \textbf{Cloud \& DevOps}: Kubernetes, Terraform, Docker, Git, Linux, OCI
 
-% --------------------------------------------------
 % Languages & Interests
-% --------------------------------------------------
 \section{LANGUES \& CENTRES D’INTÉRÊT}
-
 \textbf{Langues}: Arabe (natif), Anglais (courant), Français (courant) \\
 \textbf{Centres d’intérêt}: Football, Lecture, Programmation compétitive
 

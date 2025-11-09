@@ -1,0 +1,152 @@
+\documentclass[9pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{enumitem} % For custom list spacing
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{setspace} % For line spacing
+
+% PDF metadata
+\hypersetup{
+    pdftitle={Hamza EL MASSOUDI CV},
+    pdfauthor={Hamza EL MASSOUDI},
+    colorlinks=true,
+    urlcolor=blue
+}
+
+% --------------------------------------------------
+% Page layout
+% --------------------------------------------------
+\geometry{
+    top    = 0.2in,
+    bottom = 0.2in,
+    left   = 0.3in,
+    right  = 0.3in
+}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1pt}
+\pagenumbering{gobble}
+
+% --------------------------------------------------
+% Section formatting
+% --------------------------------------------------
+\titleformat{\section}{\bfseries\large\raggedright}{}{0pt}{}
+\titlespacing*{\section}{0pt}{4pt}{2pt} % Reduced vertical spacing for sections
+
+% --------------------------------------------------
+% Document start
+% --------------------------------------------------
+\begin{document}
+\linespread{1.0}\selectfont % Normal line spacing
+
+% Custom list spacing for itemize environments
+\setlist{itemsep=0pt, parsep=0pt}
+
+% --------------------------------------------------
+% Header
+% --------------------------------------------------
+\begin{center}
+    {\LARGE \textbf{Hamza EL MASSOUDI}}\\
+    \smallskip
+    Développeur Frontend \textbar\ Casablanca, Maroc\\
+    \smallskip
+    \faPhone\; +212 697 56 68 01 \quad
+    \href{mailto:hamza.elmassoudi.dev@gmail.com}{hamza.elmassoudi.dev@gmail.com} \quad
+    \href{https://www.linkedin.com/in/hamza-el-massoudi-29a558235/}{\faLinkedin\ linkedin.com/in/hamza-el-massoudi-29a558235} \quad
+    \href{https://github.com/ygwoah/}{\faGithub\ github.com/ygwoah}
+\end{center}
+\vspace{-4pt} % Adjusted spacing before horizontal rule
+\hrule
+\vspace{8pt} % Adjusted spacing after horizontal rule
+
+% --------------------------------------------------
+% Summary
+% --------------------------------------------------
+\section*{Résumé}
+Développeur Frontend orienté résultats, expert en React et Next.js. \textbf{Spécialisé} dans la conception et le déploiement d'interfaces utilisateur réactives, l'intégration d'APIs robustes et l'optimisation des performances pour une UX optimale. Recherche un rôle stimulant pour \textbf{contribuer} à des projets innovants et à fort impact.
+
+% --------------------------------------------------
+% Education
+% --------------------------------------------------
+\section{FORMATION}
+\textbf{Diplôme d'ingénieur, Génie Logiciel \& Systèmes Distribués} \\
+Ecole Normale Supérieure de l’Enseignement Technique, Mohammedia \hfill 2022--2025 \\
+\vspace{1pt} % Small vertical space between education entries
+\textbf{Licence en Mathématiques \& Informatique} \\
+Faculté des Sciences et Techniques, Al Hoceima \hfill 2021--2022 \\
+\vspace{1pt} % Small vertical space between education entries
+\textbf{DEUST} (Diplôme d'Études Universitaires Scientifiques et Techniques) \\
+Faculté des Sciences et Techniques, Al Hoceima \hfill 2019--2021 \\
+\vspace{1pt} % Small vertical space after last entry
+% --------------------------------------------------
+% Experience
+% --------------------------------------------------
+\section{EXPÉRIENCE}
+
+	\textbf{Stagiaire Ingénieur Logiciel — Oracle, OCI Search avec OpenSearch}
+\hfill Fév 2025--Août 2025\\
+Casablanca, Maroc
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Optimisé} le pipeline d'intégration continue (CI), \textbf{réduisant le temps d'exécution des tests de plus de 20\%} et accélérant le cycle de déploiement.
+    \item \textbf{Conçu et développé} une suite de tests robuste pour les plugins OpenSearch (Java, Bash), \textbf{garantissant la stabilité et la fiabilité} des nouvelles fonctionnalités.
+    \item \textbf{Amélioré} l'observabilité des tests via la mise en place de tableaux de bord et d'alertes proactives, permettant une détection et une résolution plus rapides des anomalies.
+\end{itemize}
+
+	\textbf{Stagiaire en Ingénierie Logicielle — FeverToken}
+\hfill Juin 2023--Août 2023\\
+À distance
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Développé} une application mobile de portefeuille de cryptomonnaies avec React Native, \textbf{améliorant l'accessibilité} et la gestion des actifs numériques.
+    \item \textbf{Implémenté} des fonctionnalités de sécurité critiques (chiffrement, authentification robuste), \textbf{renforçant la protection des fonds} des utilisateurs.
+    \item \textbf{Intégré} la technologie blockchain pour des transferts d'argent fluides, sécurisés et \textbf{transparents}.
+\end{itemize}
+
+% --------------------------------------------------
+% Projects
+% --------------------------------------------------
+\section{PROJETS}
+
+	\textbf{Plateforme d'Engagement Étudiant \& de Gestion Académique (Freelance -- Contrat)}
+\hfill Sep 2024--Déc 2024 \\
+Freelance
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Architecturé et déployé} une application React Native évolutive pour \textbf{plus de 1 000 étudiants simultanés}, \textbf{facilitant} l'autoservice, l'engagement communautaire et le mentorat.
+    \item \textbf{Intégré} un chatbot basé sur l'IA pour automatiser la réponse aux FAQ, \textbf{améliorant l'efficacité du support et la satisfaction des utilisateurs}.
+    \item \textbf{Conçu} la plateforme en utilisant React Native, Node.js/Express, PostgreSQL et l'API OpenAI pour une architecture robuste et intelligente.
+\end{itemize}
+
+	\textbf{Générateur de Lettres de Motivation Personnalisées}
+\hfill 2024 \\
+Projet Personnel
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Développé} une application web innovante avec Next.js pour la \textbf{génération automatique et personnalisée} de lettres de motivation à partir de CV et d'offres d'emploi.
+    \item \textbf{Implémenté} des algorithmes d'analyse pour \textbf{adapter intelligemment} le contenu des lettres aux exigences spécifiques des postes, \textbf{augmentant ainsi la pertinence des candidatures}.
+    \item \textbf{Déployé} l'application sur Vercel, \textbf{garantissant une accessibilité continue} et une expérience utilisateur optimale.
+\end{itemize}
+
+% --------------------------------------------------
+% Skills
+% --------------------------------------------------
+\section{COMPÉTENCES}
+
+	\textbf{Frontend}: React, Next.js, React Native, Tailwind CSS \\
+	\textbf{Langages de Programmation}: JavaScript, TypeScript, Java\\
+	\textbf{Backend}: Node.js, Express.js, Spring Boot, SQL \\
+	\textbf{Bases de Données}: MongoDB, Firestore, PostgreSQL \\
+	\textbf{Outils de Développement}: Git, Docker, Kubernetes, Jira, Confluence \\
+	\textbf{Méthodologies}: Agile, Scrum
+
+% --------------------------------------------------
+% Languages & Interests
+% --------------------------------------------------
+\section{LANGUES \& INTÉRÊTS}
+
+	\textbf{Langues}: Arabe (Langue maternelle), Anglais (Courant), Français (Courant) \\
+	\textbf{Intérêts}: Football, Lecture (essais techniques/littérature), Programmation Compétitive
+
+\end{document}

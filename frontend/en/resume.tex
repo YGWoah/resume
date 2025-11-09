@@ -1,0 +1,146 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{tabularx}
+
+% PDF metadata
+\hypersetup{
+    pdftitle={Hamza EL MASSOUDI Frontend Resume},
+    pdfauthor={Hamza EL MASSOUDI},
+    colorlinks=true,
+    urlcolor=blue
+}
+
+% --------------------------------------------------
+% Page layout
+% --------------------------------------------------
+\geometry{
+    top    = 0.3in,
+    bottom = 0.3in,
+    left   = 0.5in,
+    right  = 0.5in
+}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2pt}
+\pagenumbering{gobble}
+
+% --------------------------------------------------
+% Section formatting
+% --------------------------------------------------
+\titleformat{\section}{\bfseries\large\raggedright}{}{0pt}{}
+\titlespacing*{\section}{0pt}{6pt}{4pt}
+
+% --------------------------------------------------
+% Document start
+% --------------------------------------------------
+\begin{document}
+
+% --------------------------------------------------
+% Header
+% --------------------------------------------------
+\begin{center}
+    {\LARGE \textbf{Hamza EL MASSOUDI}}\\
+    \smallskip
+    Frontend Developer \textbar\ Casablanca, Morocco\\
+    \smallskip
+    \faPhone\; +212 697 56 68 01 \quad
+    \href{mailto:hamza.elmassoudi.dev@gmail.com}{hamza.elmassoudi.dev@gmail.com} \quad
+    \href{https://www.linkedin.com/in/hamza-el-massoudi-29a558235/}{\faLinkedin\ linkedin.com/in/hamza-el-massoudi-29a558235} \quad
+    \href{https://github.com/ygwoah/}{\faGithub\ github.com/ygwoah}
+\end{center}
+\vspace{-4pt}
+\hrule
+\vspace{8pt}
+
+% --------------------------------------------------
+% Summary
+% --------------------------------------------------
+\section*{Summary}
+Frontend Developer with expertise in building responsive and interactive user interfaces. Proficient in React, Next.js, and modern JavaScript frameworks. Created engaging web applications with seamless user experiences, integrating with backend APIs and optimizing performance.
+
+% --------------------------------------------------
+% Education
+% --------------------------------------------------
+\section{EDUCATION}
+
+\begin{tabularx}{\linewidth}{@{}p{0.78\linewidth} r@{}}
+	\textbf{Engineering Degree, Software Engineering \& Distributed Systems} — Ecole Normale Supérieure de l’Enseignement Technique, Mohammedia & 2022--2025 \\
+	\textbf{B.Sc. Mathematics \& Computer Science} — Faculty of Science and Technology, Al Hoceima & 2021--2022 \\
+	\textbf{DEUST} (Scientific and Technical University Studies) — Faculty of Science and Technology, Al Hoceima & 2019--2021 \\
+\end{tabularx}
+
+% --------------------------------------------------
+% Experience
+% --------------------------------------------------
+\section{EXPERIENCE}
+
+	\textbf{Software Engineer Intern — Oracle, OCI Search with OpenSearch}
+\hfill Feb 2025--Aug 2025\\
+Casablanca, Morocco
+\begin{itemize}[leftmargin=*]
+    \item Optimized CI pipeline, reducing test-suite time.
+    \item Engineered plugin-test suite for OpenSearch using Java and Bash.
+    \item Improved the observability of the testing.
+\end{itemize}
+
+	\textbf{Software Engineering Intern — FeverToken}
+\hfill Jun 2023--Aug 2023\\
+Remote
+\begin{itemize}[leftmargin=*]
+    \item Developed a mobile app as a crypto wallet.
+    \item Implemented features for securing the wallet, including encryption and authentication.
+    \item Added functionality for transferring money with blockchain integration.
+\end{itemize}
+
+% --------------------------------------------------
+% Projects
+% --------------------------------------------------
+\section{PROJECTS}
+
+	\textbf{Student Engagement \& Academic Management Platform (Freelance -- Contract)}
+\hfill Sep 2024--Dec 2024 \\
+Freelance
+\begin{itemize}[leftmargin=*]
+    \item Architected and delivered a scalable React Native app for 1,000+ concurrent students, enabling self-service, community engagement, and mentor matching.
+    \item Integrated an AI-powered chatbot to automate and resolve student FAQs instantly.
+    \item Engineered the platform using React Native, Node.js/Express, PostgreSQL, and OpenAI API.
+\end{itemize}
+
+	\textbf{Survey Creation Platform}
+\hfill 2024 \\
+Personal Project
+\begin{itemize}[leftmargin=*]
+    \item Conceived and engineered a full-stack web platform for creating, distributing, and analyzing surveys.
+    \item Implemented RESTful APIs and core business logic with \textbf{Spring Boot}, reducing survey creation time by 30\%.
+    \item Crafted an intuitive, responsive frontend in \textbf{React} for seamless survey creation and real-time results visualization.
+    \item Leveraged \textbf{PostgreSQL} for secure, scalable data management.
+    \item Integrated user authentication and dynamic analytics to enhance user experience.
+\end{itemize}
+
+% --------------------------------------------------
+% Skills
+% --------------------------------------------------
+\section{SKILLS}
+
+	\textbf{Frontend}: React, Next.js, React Native, Tailwind CSS \\
+	\textbf{Programming Languages}: JavaScript, TypeScript \\
+	\textbf{Backend}: Node.js, Express.js \\
+	\textbf{Databases}: MongoDB, Firestore \\
+	\textbf{DevOps}: Git, Docker
+
+% --------------------------------------------------
+% Languages & Interests
+% --------------------------------------------------
+\section{LANGUAGES \& INTERESTS}
+
+	\textbf{Languages}: Arabic (Native), English (Fluent), French (Fluent) \\
+	\textbf{Interests}: Football, Reading, Competitive Programming
+
+\end{document}
